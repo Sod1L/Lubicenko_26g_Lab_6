@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+button {
+  width: 260px;
+  height: 60px;
+  font-size: 16px;
+  padding: 0;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#loadBtn {
+  background-color: #399f30;
+  color: #b9b9b9;
+}
+
+#clearBtn {
+  background-color: #9f3080;
+  color: white;
+}
+
+button.yes {
+  background-color: lightgreen;
+  color: black;
+  border: 1px solid #1d661d;
+}
+
+button.no {
+  background-color: crimson;
+  color: white;
+  border: 1px solid #660000;
+}
+
+button.clear-sort-btn {
+  background-color: #d1001c;
+  color: white;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px, 0px;
+}
+thead th {
+  background-color: #a032a8;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+thead th .arrow {
+  margin-left: 6px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+tbody tr {
+  background-color: transparent;
+}
+
+tbody td {
+  background-color: #e5b7ff;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+button.clear-sort-btn {
+  background-color: #d1001c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 3px;
+  float: right;
+  margin-bottom: 10px;
+}
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #e2b6f0;
+  position: relative;
+}
+
+th {
+  background-color: #a032a8;
+  color: white;
+  font-weight: bold;
+}
+
+th .arrow {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.9em;
+}
+
+th.sortable {
+  cursor: pointer;
+}
+
+tr {
+  border-radius: 3px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  background-color: #e5b7ff;
+  margin: 5px;
+  border-radius: 8px;
+  border: none !important;
+  font-weight: bold;
+}
+
+th.sortable.active {
+  background-color: #f15ac1 !important;
+}
+
